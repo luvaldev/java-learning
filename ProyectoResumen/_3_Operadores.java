@@ -1,4 +1,4 @@
-package Proyecto;
+package ProyectoResumen;
 
 public class _3_Operadores {
   public static void main(String[] args) {

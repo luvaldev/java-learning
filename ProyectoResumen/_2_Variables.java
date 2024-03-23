@@ -1,4 +1,4 @@
-package Proyecto;
+package ProyectoResumen;
 
 public class _2_Variables {
   // Generar metodo main

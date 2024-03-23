@@ -1,9 +1,9 @@
-package Proyecto;
+package ProyectoResumen;
 
-public class _5_Ciclos {
+public class _7_Ciclos {
   public static void main(String[] args) {
     // ------------------------- Ciclos -----------------------------
-    
+
     /**
      * Existen varios tipos de ciclos, For, While, Do While
      * Estrucutra del ciclo tipo for:
@@ -44,6 +44,30 @@ public class _5_Ciclos {
        * a = 20, b = 30 ; b es inicio, rango entre b hasta (b + (a - 1))
        */
     }
+
+    // Un ejemplo para el while
+    int a = 1;
+    while (a != 30) {
+      System.out.println("Hola mundo");
+      a++;
+    }
+    /**
+     * Mientras que se cumpla la condicion el while ejecutara
+     * el codigo dentro.
+     */
+
+    // Un ejemplo para el do while
+    int b = 2;
+    do {
+      System.out.println("Hola mundo");
+      b++;
+    } while (b <= 5);
+    /**
+     * Lo que haremos en este caso es que el do while, siempre
+     * pero siempre ejecuta una vez el codigo que hay dentro,
+     * luego lee la condicion y si se cumple sigue ejecutandolo
+     * hasta que deje de cumplirse.
+     */
 
   }
 }

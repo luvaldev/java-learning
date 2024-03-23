@@ -1,4 +1,4 @@
-package Proyecto;
+package ProyectoResumen;
 
 //Clase publica 
 public class _1_Texto {

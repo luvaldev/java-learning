@@ -1,4 +1,4 @@
-package Proyecto;
+package ProyectoResumen;
 
 import java.util.Scanner;
 //Necesario importar el paquete y la clase que utilizaremos Scanner
