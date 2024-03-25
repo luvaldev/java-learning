@@ -1,3 +1,12 @@
+/**
+ * Revisa si el texto ingresado es un palindromo. Los test 
+ * cases no tendrán tildes ni mayusculas. 
+ * 
+ * Input: reconocer
+ * 
+ * Output: true
+*/
+
 package Ejercicios.ProyetoRetos;
 
 import java.util.Scanner;

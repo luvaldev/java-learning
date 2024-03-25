@@ -2,6 +2,10 @@
  * El programa debe recibir como primer argumento la cantidad 
  * de números (n) a revisar y en segundo lugar deberá recibir una 
  * serie de números enteros de largo previamente ingresado (n):
+ * 
+ * Input: 5 2 6 28 3
+ * 
+ * Output: 28
 */
 
 package Ejercicios.ProyetoRetos;

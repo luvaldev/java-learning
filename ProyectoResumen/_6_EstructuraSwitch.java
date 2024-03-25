@@ -46,7 +46,7 @@ public class _6_EstructuraSwitch {
         System.out.println("El numero " + numero + " es par.");
         break;
       default: //Para cualquier otro valor es impar
-        System.out.println("El numero " + numero + " es impar");
+        System.out.println("El numero " + numero + " es impar");  
         break;
     }
 
