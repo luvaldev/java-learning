@@ -97,7 +97,7 @@ public class _8_ControlExpresiones {
 
     // ---------------------- Otro caso + limpio ---------------------------
 
-    try (Scanner ingresarSc = new Scanner(System.in);) {
+    try (Scanner ingresarSc = new Scanner(System.in)) {
       System.out.print("Ingrese un numero entero: ");
       int num = ingresarSc.nextInt();
 
@@ -108,7 +108,6 @@ public class _8_ControlExpresiones {
 
     } catch (Exception ex) {
       System.out.println("Ha ocurrido un problema: " + ex.getMessage());
-
     }
     /**
      * En este caso hicimos algo similar que lo de arriba, el unico caso
@@ -120,6 +119,5 @@ public class _8_ControlExpresiones {
      * puede ser visto apretando Ctrl + click izquierdo en el nombre de la class
      * en este caso "Scanner".
      */
-
   }
 }
