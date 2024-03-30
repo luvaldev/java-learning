@@ -26,6 +26,8 @@ package ProyectoResumen;
  * }
  */
 
+// Ejemplo:
+
 interface Animal {
   public void sonidoAnimal();
 
@@ -51,7 +53,6 @@ class Perro implements Animal {
   }
 }
 
-// Ejemplo:
 public class _14_Interfaces {
   public static void main(String[] args) {
     Perro perro = new Perro();
