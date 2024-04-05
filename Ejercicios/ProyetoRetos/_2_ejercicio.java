@@ -12,7 +12,7 @@ package Ejercicios.ProyetoRetos;
 
 import java.util.Scanner;
 
-public class _2_ejercicio {
+public class _2_Ejercicio {
   public static void main(String[] args) {
     Scanner insert = new Scanner(System.in);
 
