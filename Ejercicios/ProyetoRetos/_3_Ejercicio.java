@@ -7,7 +7,6 @@
  * Output: true
 */
 
-package Ejercicios.ProyetoRetos;
 
 import java.util.Scanner;
 

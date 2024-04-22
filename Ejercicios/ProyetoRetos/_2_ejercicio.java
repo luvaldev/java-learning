@@ -8,7 +8,6 @@
  * Output: 28
 */
 
-package Ejercicios.ProyetoRetos;
 
 import java.util.Scanner;
 

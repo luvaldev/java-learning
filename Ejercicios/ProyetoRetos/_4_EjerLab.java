@@ -1,4 +1,3 @@
-package Ejercicios.ProyetoRetos;
 import java.util.Scanner;
 
 public class _4_EjerLab {
@@ -7,67 +6,55 @@ public class _4_EjerLab {
     int fila;
     int columna;
 
-    /**
-     * Insertar filas para la formacion de la matriz cumpliendo
-     * con la condicion entre 1 y 1000.
-     */
+    // --------- Part 1 --------
     do {
-      System.out.print("Ingrese el tamaño de filas entre 1 y 1000: ");
+      System.out.print("Ingrese el tamaño de filas y columnas con un espacio entre 1 y 1000: ");
       fila = insert.nextInt();
-    } while (fila < 1 || fila > 1000);
-
-    /**
-     * Insetar columnas para la formacion de la matriz cumpliendo
-     * con la condicion
-     */
-    do {
-      System.out.print("Ingrese el tamaño de columnas entre 1 y 1000: ");
       columna = insert.nextInt();
-    } while (columna < 1 || columna > 1000);
+    } while (fila < 1 || fila > 1000 || columna < 1 || columna > 1000);
 
-    // Creamos matriz
+    // --------- Part 2 --------
     int matriz[][] = new int[fila][columna];
 
-    // Llenamos la matriz
+    // --------- Part 3 --------
     for (int i = 0; i < fila; i++) {
       System.out.println(" -- Fila " + (i + 1) + " -- ");
       for (int j = 0; j < columna; j++) {
         System.out.print("Columna " + (j + 1) + ": ");
-        matriz[i][j] = insert.nextInt();
+        do{
+          matriz[i][j] = insert.nextInt();
+        } while (matriz[i][j] < 0 || matriz[i][j] > Math.pow(10,8));
       }
     }
 
-    String hola;
+    // --------- Part 4 --------
+    int filaDos, filaUno;
 
-    // Cerramos el scanner
+    do {
+      System.out.print("Ingrese 2 filas para hacer los pares: ");
+      filaUno = insert.nextInt();
+      filaDos = insert.nextInt();
+    } while (filaUno <= 0 || filaUno > fila && filaDos <= 0 || filaDos > fila);
+
     insert.close();
 
-    System.out.println(" --- Matriz 2x" + columna + " ordenada por pares --- ");
-    /**
-     * Almacenamos los valores pares encontrados en la primera y la segunda fila
-     */
+    // --------- Part 5 --------
+    System.out.println("----- Pares de las filas " + filaUno + " ; " + filaDos + " ------");
 
-    int matrizOrdenada[][] = new int[2][columna];
-    int a = 0;
-
-    for (int i = 0; i < 2; i++) {
+    for (int i = 0; i < columna; i++) {
       for (int j = 0; j < columna; j++) {
-        if (matriz[i][j] % 2 == 0) {
-          matrizOrdenada[i][a] = matriz[i][j];
-          a++;
-        }
+        System.out.print("{" + matriz[filaUno - 1][i] + "," + matriz[filaDos - 1][j] + "} ");
       }
-      // Cuando termine de recorrer la j se resetea el a
-      a = 0;
     }
 
-    // Imprimimos matriz ordenada de pares
-    for (int i = 0; i < 2; i++) {
+    System.out.println(" "); // Salto de linea
+
+    for (int i = 0; i < columna; i++) {
       for (int j = 0; j < columna; j++) {
-        System.out.print(matrizOrdenada[i][j] + " ");
+        System.out.print("{" + matriz[filaDos - 1][i] + "," + matriz[filaUno - 1][j] + "} ");
       }
-      System.out.println(" ");
     }
 
+    System.out.println(" "); // Salto de linea
   }
-}
+  }

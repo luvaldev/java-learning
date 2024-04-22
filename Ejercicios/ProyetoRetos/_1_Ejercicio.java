@@ -6,7 +6,6 @@
  * Output: Hello "World" (u otra palabra)
 */
 
-package Ejercicios.ProyetoRetos;
 
 import java.util.Scanner;
 
