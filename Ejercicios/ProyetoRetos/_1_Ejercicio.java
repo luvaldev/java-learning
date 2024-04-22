@@ -6,7 +6,6 @@
  * Output: Hello "World" (u otra palabra)
 */
 
-
 import java.util.Scanner;
 
 public class _1_Ejercicio {
