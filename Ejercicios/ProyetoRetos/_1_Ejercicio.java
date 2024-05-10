@@ -5,7 +5,7 @@
  * Imput : World (o cualquier otra palabra ingresada en consola)
  * Output: Hello "World" (u otra palabra)
 */
-
+  
 import java.util.Scanner;
 
 public class _1_Ejercicio {
